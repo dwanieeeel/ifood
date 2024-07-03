@@ -1,0 +1,303 @@
+* 
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#footer 
+{
+	display: flex;
+	/*background: rgb(255, 255, 255);*/
+	/*color: rgb(1, 1, 1);*/
+	color: #717171;
+	/*padding: 50px 0;*/
+	padding-top: 10px;
+    margin-top: 70px;
+	padding-bottom: 10px;
+	border-top: 1px solid #dcdcdc;
+}
+
+#footer .footer-content 
+{
+	display: flex;
+	width: 60%;
+	/*margin: auto;*/
+	justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu 
+{
+	margin: 0 60px;
+	list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item 
+{
+	margin: 25px 0;
+	transition: all 300ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover 
+{
+	cursor: pointer;
+	color: #000000be;
+}
+
+#footer .footer-content .footer-menu p 
+{
+	font-weight: bold;
+	color: black;
+	font-size: 1rem;
+}
+
+#label-social
+{
+	color: black;
+}
+
+.socials i 
+{
+	margin: 20px;
+	font-size: 1.7rem;
+	transition: all 300ms ease;
+}
+
+.socials i:hover 
+{
+	color: rgb(50, 50, 50);
+	cursor: pointer;
+}
+
+.social-icons
+{
+    display: flex;
+}
+
+.header ul
+{   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header ul li
+{
+    list-style: none;
+    color: #3e3e3e;
+    margin-left: 15px;
+}
+
+.header ul li a
+{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+.header ul li a:hover
+{
+    color: #ea1d2c;
+}
+
+.header ul li img
+{
+    cursor: pointer;
+}
+
+#img-1
+{
+    width: 100px;
+    z-index: 1;
+    margin-right: 1px;
+}
+
+#img-2
+{
+    width: 40px;
+    z-index: 1;
+    margin-left: 1px;
+}
+
+#img-3
+{
+    width: 80px;
+    z-index: 1;
+}
+
+.header ul img
+{
+    width: 50px;
+    margin: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+}
+
+.form .search {
+    width: 100%;
+    max-width: 650px;
+    /*background: #fff;*/
+    background: #f7f7f7;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 0;
+    display: flex;
+    /*box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);*/
+}
+
+.form .search img
+{
+    width: 26px;
+    /* margin: 0 7px; */
+    margin: 12px;
+}
+
+.form .search input
+{
+    /* width: 100%; */
+    width: 200px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+.footer-2
+{
+    border-top: 1px solid #999;
+    display: flex;
+    padding: 20px 0;
+}
+
+.footer-2 img
+{
+    width: 50px;
+}
+
+.footer-2 span
+{
+    font-size: 0.8125rem;
+    color: #818181;
+    margin: 0 20px;
+}
+
+.footer-2 ul
+{
+	display: flex;
+}
+
+.footer-2 ul li
+{
+	list-style: none;
+	margin: 10px;
+	color: #818181;
+	justify-content: space-around;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel {
+    position: relative; /* Define a posição relativa para o carrossel */
+    width: 80%; /* Define a largura do carrossel como 80% */
+    max-width: 1000px; /* Define a largura máxima do carrossel como 1000px */
+    overflow: hidden; /* Esconde o conteúdo que extrapola os limites do carrossel */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/ /* Adiciona uma sombra ao carrossel */
+    background-color: white; /* Cor de fundo do carrossel */
+    border-radius: 10px; /* Borda arredondada do carrossel */
+}
+
+.carousel-container {
+    overflow: hidden; /* Esconde o conteúdo que extrapola os limites do contêiner do carrossel */
+    width: 100%; /* Define a largura do contêiner do carrossel como 100% */
+}
+
+.carousel-track {
+    display: flex; /* Utiliza o modelo de layout flexbox para os itens do carrossel */
+    transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave ao transformar os itens do carrossel */
+}
+
+.carousel-item {
+    min-width: 40%; /* Largura mínima dos itens do carrossel (ajuste para controlar o número de itens visíveis) */
+    box-sizing: border-box; /* Faz com que a largura definida inclua a largura da borda e do padding */
+    text-align: center; /* Centraliza o conteúdo dos itens do carrossel */
+}
+
+.carousel-item img {
+    width: 95%; /* Faz com que as imagens dos itens do carrossel ocupem 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da altura conforme a largura é ajustada */
+    border-radius: 10px; /* Borda arredondada para as imagens dos itens do carrossel */
+}
+
+.prev, .next {
+    position: absolute; /* Define a posição absoluta para os botões de navegação */
+    top: 50%; /* Alinha os botões verticalmente no centro */
+    transform: translateY(-50%); /* Ajusta a posição vertical dos botões para que fiquem no centro */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente para os botões */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Remove a borda dos botões */
+    padding: 10px; /* Espaçamento interno dos botões */
+    cursor: pointer; /* Cursor do mouse muda para indicar que os botões são clicáveis */
+    z-index: 1; /* Coloca os botões acima dos outros elementos */
+}
+
+.prev {
+    left: 10px; /* Posiciona o botão "anterior" à esquerda com um pequeno afastamento */
+}
+
+.next {
+    right: 10px; /* Posiciona o botão "próximo" à direita com um pequeno afastamento */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Altera a cor de fundo dos botões ao passar o mouse por cima */
+}
+
+.antes-do-carrossel
+{
+    display: flex;
+}
+
+.cupons {
+    background-color: #50a773;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    transition: transform .3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+
+.card {
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100px;
+    margin-right: 40px;
+    height: 120px;
+    color: #717171;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container {
+    /* padding: 2px 16px; */
+    padding: 10px;
+}
+
+.antes-do-carrossel .card .container p img
+{
+    border-radius: 5px 5px 5px 5px;
+}
