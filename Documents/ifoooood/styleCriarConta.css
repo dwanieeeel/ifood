@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin-bottom: 490px;
+    z-index: 3;
+}
+
+.logo {
+    margin-left: 20px;
+    height: 40px;
+    width: auto;
+}
+
+body{
+    background-image: url(https://portal.ifood.com.br/static/media/img-8.e9aadcb3905fadfb224d.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.box{
+    justify-content: center;
+    display: flex;
+    width: 930px;
+}
+.form-box{
+    background-color: white;
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px rgba(50, 48, 48, 0.5);
+}
+.form-box h2{
+    font-size: 30px;
+}
+.form-box p{
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.form-box p a{
+    color: rgb(234, 29, 44);
+    text-decoration: none;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+form .input-group{
+    margin-bottom: 15px;
+}
+form .input-group label{
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+    border-color: rgb(234, 29, 44);
+}
+form .input-group input:focus{
+    border-color: #04935069;
+}
+form .input-group button{
+    width: 100%;
+    height: 47px;
+    background: rgb(234, 29, 44);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
